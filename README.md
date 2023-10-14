@@ -1,0 +1,5 @@
+# pic_add_mark
+add mark
+mark：水印图片
+target：原始图片
+result：输出的拼接结果
