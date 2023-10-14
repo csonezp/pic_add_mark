@@ -23,10 +23,11 @@ def addShuiYin():
     process_m_h = math.floor(m_h * (w / m_w))
 
     mark.resize((process_m_w, process_m_h))
+    print('mark resize size: %sx%s' % (process_m_w, process_m_h))
 
     result = Image.new('RGB', (process_m_w, process_m_h + h))
     result.paste(im, (0, 0))
-    result.paste(mark,(0,h))
+    result.paste(mark, (0, h))
     result.save("result.jpg")
 
 
